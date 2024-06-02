@@ -3,6 +3,9 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0px;
+
+  padding: 0px;
 }
 
 /* Prevent font size inflation */
@@ -10,6 +13,7 @@ html {
   -moz-text-size-adjust: none;
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
+  scroll-behavior: auto !important;
 }
 
 /* Remove default margin in favour of better control in authored CSS */
@@ -89,6 +93,18 @@ textarea:not([rows]) {
   scroll-margin-block: 5ex;
 }
 
+a{
+  text-decoration: none;
+}
+
+a:visited{
+  color: inherit;
+}
+
+a:active{
+  color: inherit;
+}
+
 /* variables setup */
 
 :root {
@@ -111,11 +127,53 @@ textarea:not([rows]) {
   --ff-primary: "ClashDisplay-Medium", sans-serif;
   --ff-secondary: "Bricolage Grotesque", sans-serif;
 
-  /*  */
+  /* border-radius */
+  --br: 50px;
 }
 
-body{
+body {
   font-family: var(--ff-body);
   color: var(--42);
   background-color: var(--12);
 }
+
+body section {
+  padding: 2rem 1rem;
+}
+
+h1{
+  font-family: var(--ff-primary);
+}
+
+input:focus{
+  outline: none;
+}
+
+textarea:focus{
+  outline: none;
+}
+
+/* utility classes */
+.sr-only{
+  display: none;
+}
+
+.txt-light{
+  color: var(--82);
+}
+
+.btn-outlined{
+  border: 1px solid var(--82);
+  color: var(--92);
+  background-color: transparent;
+  padding: 1rem 2rem;
+  border-radius: var(--br);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-outlined:hover{
+  background-color: var(--22);
+  border: none;
+}
+

@@ -1,10 +1,11 @@
 import React from 'react'
+import HomePage from './Pages/HomePage/HomePage'
+import CreateBlog from './Components/Blog/CreateBlog'
 
 const App = () => {
   return (
-    <h1>
-      Hello world!
-    </h1>
+    // <HomePage />
+    <CreateBlog />
   )
 }
 
