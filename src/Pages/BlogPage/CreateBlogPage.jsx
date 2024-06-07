@@ -1,6 +1,6 @@
 import React from "react";
-import "./CreateBlog.css";
-import PageWrapper from "../PageWrapper/PageWrapper";
+import "./CreateBlogPage.css";
+import PageWrapper from "../../Components/PageWrapper/PageWrapper";
 
 const CreateBlog = () => {
 

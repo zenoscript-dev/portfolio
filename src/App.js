@@ -1,11 +1,14 @@
 import React from 'react'
-import HomePage from './Pages/HomePage/HomePage'
-import CreateBlog from './Components/Blog/CreateBlog'
+import HomePage from './Pages/HomePage/HomePage';
+import ContactPage from './Pages/ContactPage/ContactPage.jsx';
+import ViewBlog from './Pages/BlogPage/ViewBlogPage.jsx';
 
 const App = () => {
   return (
-    // <HomePage />
-    <CreateBlog />
+    <HomePage />
+    // <CreateBlog />
+    // <ContactPage />
+    // <ViewBlog title="Ammavaru" content={`<h2>kjasdkjsds</h2>`}/>
   )
 }
 

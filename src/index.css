@@ -81,6 +81,7 @@ textarea,
 select {
   font-family: inherit;
   font-size: inherit;
+  outline: none;
 }
 
 /* Make sure textareas without a rows attribute are not tiny */
@@ -93,15 +94,15 @@ textarea:not([rows]) {
   scroll-margin-block: 5ex;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-a:visited{
+a:visited {
   color: inherit;
 }
 
-a:active{
+a:active {
   color: inherit;
 }
 
@@ -138,31 +139,37 @@ body {
 }
 
 body section {
-  padding: 2rem 1rem;
+  padding: 2rem 0rem;
 }
 
-h1{
+h1 {
   font-family: var(--ff-primary);
 }
 
-input:focus{
+h2 {
+  font-family: var(--ff-primary);
+  font-size: 2.6rem;
+  /* padding: 2rem 0; */
+}
+
+input:focus {
   outline: none;
 }
 
-textarea:focus{
+textarea:focus {
   outline: none;
 }
 
 /* utility classes */
-.sr-only{
+.sr-only {
   display: none;
 }
 
-.txt-light{
+.txt-light {
   color: var(--82);
 }
 
-.btn-outlined{
+.btn-outlined {
   border: 1px solid var(--82);
   color: var(--92);
   background-color: transparent;
@@ -172,8 +179,34 @@ textarea:focus{
   transition: all 0.2s ease-in-out;
 }
 
-.btn-outlined:hover{
+.btn-outlined:hover {
   background-color: var(--22);
   border: none;
 }
 
+.btn-fill {
+  display: flex;
+  gap: .5rem;
+  padding: .75rem 1.5rem;
+  border-radius: 64px;
+  color: var(--15);
+  background-color: var(--82);
+  align-items: center;
+  width: fit-content;
+  transition: all 0.2s ease-in-out;
+
+}
+
+.btn-fill:hover {
+  background-color: var(--92);
+}
+
+.label{
+  /* font-size: .8rem; */
+  color: var(--62);
+}
+
+/* .page-padding{
+  padding: 2rem 1rem;
+
+} */

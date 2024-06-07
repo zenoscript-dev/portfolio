@@ -1,5 +1,5 @@
 .hero {
-  height: 100dvh;
+  height: 85dvh;
 }
 
 .hero-wrapper {
@@ -46,8 +46,27 @@ h1 {
     background-color: #3f0;
 }
 
-.grid{
-    display: grid;
-    grid-template-columns: repeat(1fr, 4);
-    height: 100dvh;
+.experience-wrapper{
+  display: flex;
+  gap: 2rem;
 }
+.experience-left{
+  flex: .5;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+
+.experience-content{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+
+
+
+
+

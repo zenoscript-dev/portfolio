@@ -4,7 +4,7 @@ import { GoCopy } from "react-icons/go";
 
 const Navbar = () => {
   return (
-    <header>
+    <header className="page-padding">
       <nav className="nav">
         <div className="nav-left">
             <a href="#">Zenoscript-dev</a>
