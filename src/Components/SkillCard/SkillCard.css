@@ -1,0 +1,10 @@
+.skill-card-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    color: var(--92);
+    background: radial-gradient(137.45% 110.02% at 98.97% 1.47%, #34383C 0%, #242629 100%), #242629;
+    padding: 1rem;
+    /* max-width: 150px; */
+}

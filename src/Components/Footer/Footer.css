@@ -1,0 +1,130 @@
+footer {
+    background: radial-gradient(137.45% 110.02% at 98.97% 1.47%, #34383C 0%, #242629 100%), #242629;
+    border-radius: 32px;
+    padding: 2.5rem 3rem;
+    min-height: 50dvh;
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    justify-content: space-between;
+    gap: 6rem;
+
+
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-contact-info {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.footer-left {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+
+.footer-contact-info>p {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+
+}
+
+.footer-contact-info>p>span {
+    text-decoration: underline;
+}
+
+.footer-right {
+    color: var(--62);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.footer-right-item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.footer-right-item-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.footer-right-item-header>span {
+    color: var(--62);
+    background-color: var(--32);
+    padding: 3px 8px 2px 8px;
+    border-radius: 32px;
+}
+
+
+.footer-right-item-link {
+    display: flex;
+    cursor: pointer;
+    gap: 1rem;
+}
+
+.footer-right-item-link>img {
+    width: 4rem;
+    object-fit: contain;
+}
+
+
+.footer-right-item-content-info {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+
+}
+
+.footer-additional-info{
+    border-top: 1px solid var(--32);
+    padding: 2rem 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.info-item{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.info-item>p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-item{
+    color: var(--92);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .4rem;
+}
+
+.socials-wrapper{
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
