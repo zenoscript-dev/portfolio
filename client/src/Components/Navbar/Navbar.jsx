@@ -7,7 +7,7 @@ const Navbar = () => {
     <header className="page-padding">
       <nav className="nav">
         <div className="nav-left">
-            <a href="#">Zenoscript-dev</a>
+            <a href="/">Zenoscript-dev</a>
         </div>
         <span className="sr-only">Zenoscript-dev logo</span>
         <div className="nav-right">
@@ -19,7 +19,10 @@ const Navbar = () => {
               <a href="">Work</a>
             </li>
             <li className="nav-link">
-              <a href="">Contact</a>
+              <a href="/blogs">Blogs</a>
+            </li>
+            <li className="nav-link">
+              <a href="/contact">Contact</a>
             </li>
             <li className="nav-mail">
             <GoCopy />

@@ -1,0 +1,25 @@
+.blog-card{
+    height: 100%;
+    width: 100%;
+    background: radial-gradient(137.45% 110.02% at 98.97% 1.47%, #34383C 0%, #242629 100%), #242629;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2rem;
+    text-overflow: ellipsis; /* This property is not needed here */
+    cursor: pointer;
+}
+.blog-card>h3{
+    font-size: 1.3rem;
+    max-width: 20ch;
+    overflow: hidden; /* Ensure overflow is hidden */
+    text-overflow: ellipsis;
+    white-space:nowrap; /* Prevent text from wrapping */
+}
+
+.blog-card>img{
+    width: 90%;
+    object-fit: cover;
+}

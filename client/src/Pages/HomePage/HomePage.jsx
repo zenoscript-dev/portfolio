@@ -18,59 +18,60 @@ import { SiSqlite } from "react-icons/si";
 import { SiGit } from "react-icons/si";
 import { SiGithub } from "react-icons/si";
 import { SiFirebase } from "react-icons/si";
+import BlogCard from "../../Components/BlogCard/BlogCard";
+import { BsArrowRight } from "react-icons/bs";
 
 const HomePage = () => {
-
   const skillsData = [
     {
       name: "HTML",
-      icon: ImHtmlFive
+      icon: ImHtmlFive,
     },
     {
       name: "CSS",
-      icon: SiCss3
+      icon: SiCss3,
     },
     {
       name: "JAVASCRIPT",
-      icon: SiJavascript
+      icon: SiJavascript,
     },
     {
       name: "REACT",
-      icon: SiReact
+      icon: SiReact,
     },
     {
       name: "EXPO",
-      icon: SiExpo
+      icon: SiExpo,
     },
     {
       name: "NESTJS",
-      icon: SiNestjs
+      icon: SiNestjs,
     },
     {
       name: "MONGODB",
-      icon: SiMongodb
+      icon: SiMongodb,
     },
     {
       name: "FIREBASE",
-      icon: SiFirebase
+      icon: SiFirebase,
     },
     {
       name: "SQL",
-      icon: SiMysql
+      icon: SiMysql,
     },
     {
       name: "SQLITE",
-      icon: SiSqlite
+      icon: SiSqlite,
     },
     {
       name: "GIT",
-      icon: SiGit
+      icon: SiGit,
     },
     {
       name: "GITHUB",
-      icon: SiGithub
+      icon: SiGithub,
     },
-  ]
+  ];
   return (
     <PageWrapper>
       <Navbar />
@@ -90,7 +91,7 @@ const HomePage = () => {
         </div>
       </section>
       {/* work section */}
-      <section className="section">
+      <section className="section" id="work">
         <h2>
           Latest <span className="txt-light">Work</span>
         </h2>
@@ -98,7 +99,7 @@ const HomePage = () => {
       </section>
 
       {/* experience section */}
-      <section className="section">
+      <section className="section" id="experience">
         <div className="experience-wrapper">
           <div className="experience-left">
             <h2>
@@ -129,25 +130,38 @@ const HomePage = () => {
 
       {/* skills section */}
 
-<section className="section">
-  <div className="skills-wrapper">
-    <div className="skills-left">
-      <h2>
-        My <span className="txt-light">Skills</span>
-      </h2>
-      <p>
-              As a freelancer I worked on
-              all these
-              technologies.
-            </p>
-    </div>
-    <div className="skills-right">
-      {skillsData.map((skill) => (
-        <SkillCard key={skill.name} Icon={skill.icon} name={skill.name} />
-      ))}
-    </div>
-  </div>
-</section>
+      <section className="section">
+        <div className="skills-wrapper">
+          <div className="skills-left">
+            <h2>
+              My <span className="txt-light">Skills</span>
+            </h2>
+            <p>As a freelancer I worked on all these technologies.</p>
+          </div>
+          <div className="skills-right">
+            {skillsData.map((skill) => (
+              <SkillCard key={skill.name} Icon={skill.icon} name={skill.name} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* blogs setion */}
+      <section className="section" id="blogs">
+        <div className="blogs-wrapper">
+          <div className="blogs-header">
+            <h2>
+              My <span className="txt-light">Blog</span>
+            </h2>
+            <a href="/blogs"><BsArrowRight />view more</a>
+          </div>
+          <div className="blogs-list">
+            <BlogCard img="/logo512.png" text="this is example blog asjdbaskjdasjkdsadasashdhaduishduhuhwqihiwuhewuiheqwuihewiuheiuwq"/>
+            <BlogCard img="/logo512.png" text="this is example blog asjdbaskjdasjkdsadasashdhaduishduhuhwqihiwuhewuiheqwuihewiuheiuwq"/>
+            <BlogCard img="/logo512.png" text="this is example blog asjdbaskjdasjkdsadasashdhaduishduhuhwqihiwuhewuiheqwuihewiuheiuwq"/>
+          </div>
+        </div>
+      </section>
       <Footer />
     </PageWrapper>
   );

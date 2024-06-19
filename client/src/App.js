@@ -1,16 +1,18 @@
 import React from 'react'
-import HomePage from './Pages/HomePage/HomePage.jsx';
-import ContactPage from './Pages/ContactPage/ContactPage.jsx';
-import ViewBlog from './Pages/BlogPage/ViewBlogPage.jsx';
-import Footer from './Components/Footer/Footer.jsx';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import HomePage from './Pages/HomePage/HomePage';
+import ContactPage from './Pages/ContactPage/ContactPage';
+import CreateBlog from './Pages/BlogPage/CreateBlogPage';
 
 const App = () => {
   return (
-    // <Footer />
-    <HomePage />
-    // <CreateBlog />
-    // <ContactPage />
-    // <ViewBlog title="Ammavaru" content={`<h2>kjasdkjsds</h2>`}/>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/create-blog" element={<CreateBlog />} />
+      </Routes>
+    </Router>
   )
 }
 
