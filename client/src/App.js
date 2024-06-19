@@ -1,5 +1,5 @@
 import React from 'react'
-import HomePage from './Pages/HomePage/HomePage';
+import HomePage from './Pages/HomePage/HomePage.jsx';
 import ContactPage from './Pages/ContactPage/ContactPage.jsx';
 import ViewBlog from './Pages/BlogPage/ViewBlogPage.jsx';
 import Footer from './Components/Footer/Footer.jsx';
