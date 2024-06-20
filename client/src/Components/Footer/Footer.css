@@ -128,3 +128,21 @@ footer {
     justify-content: space-between;
 }
 
+
+@media (max-width: 991.98px) {
+    .footer-content{
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    }
+    .footer-left{
+        width: 100%;
+    }
+    .footer-right{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+}
