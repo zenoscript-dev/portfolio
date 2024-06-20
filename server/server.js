@@ -1,8 +1,10 @@
-const express = require('express');
+import express from 'express';
 const app = express();
 const PORT = process.env.PORT || 3000;
-const dbConnection = require('./config/db.config');
-const blogRouter = require('./routes/blog.routes');
+import blogRouter from "./src/routes/blog.routes.js"
+import dotenv from "dotenv";
+dotenv.config();
+import connectToDb from "./src/config/db.config.js"
 
 // Middleware to parse JSON bodies
 app.use(express.json());
@@ -15,5 +17,6 @@ app.listen(PORT, (err) => {
     console.error("Failed to start server:", err);
   } else {
     console.log(`Server is running on port ${PORT}`);
+    connectToDb();
   }
 });
